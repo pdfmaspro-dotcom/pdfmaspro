@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <!-- PDF page shape -->
+  <rect x="14" y="10" width="28" height="36" rx="3" fill="white" opacity="0.95"/>
+  <!-- Folded corner -->
+  <path d="M34 10 L42 18 L34 18 Z" fill="#6366f1" opacity="0.4"/>
+  <!-- Lines on page -->
+  <rect x="18" y="22" width="16" height="2" rx="1" fill="#6366f1" opacity="0.6"/>
+  <rect x="18" y="27" width="20" height="2" rx="1" fill="#6366f1" opacity="0.4"/>
+  <rect x="18" y="32" width="14" height="2" rx="1" fill="#6366f1" opacity="0.3"/>
+  <!-- Pro badge dot -->
+  <circle cx="44" cy="44" r="10" fill="#10b981"/>
+  <text x="44" y="48" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="bold" fill="white">Pro</text>
+</svg>

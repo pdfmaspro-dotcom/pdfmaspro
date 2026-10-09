@@ -1,0 +1,41 @@
+User-agent: *
+Allow: /
+Allow: /blog/
+Allow: /blog/*
+Disallow: /api/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /*.json$
+
+# AI SEARCH crawlers — explicitly allowed for AI Overviews / AI Mode / ChatGPT / Perplexity / Claude citation eligibility
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# AI TRAINING crawlers — blocked (does not affect search-citation eligibility above)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+# ✅ REPLACE: pdfmaspro.com → apna real domain
+Sitemap: https://pdfmaspro.com/sitemap.xml
+Host: https://pdfmaspro.com

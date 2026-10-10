@@ -1,9 +1,0 @@
-# Cloudflare Pages Configuration
-# This file ensures Pages uses native Pages features instead of Workers
-
-[env.production]
-name = "pdfmaspro"
-
-[build]
-command = "npm run build"
-cwd = "./"

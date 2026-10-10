@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "include": ["/"],
+  "exclude": [
+    "/assets/*",
+    "/icon-*.png",
+    "/og-image.png",
+    "/favicon.svg",
+    "/upi-qr.png",
+    "/manifest.webmanifest",
+    "/*.js",
+    "/*.css",
+    "/*.woff2"
+  ],
+  "rules": [
+    {
+      "condition": {
+        "or": [
+          { "path_glob": "*.html" },
+          { "path_glob": "*.json" },
+          { "path_glob": "*.svg" },
+          { "path_glob": "*.png" },
+          { "path_glob": "*.jpg" },
+          { "path_glob": "*.jpeg" },
+          { "path_glob": "*.webp" },
+          { "path_glob": "*.woff" },
+          { "path_glob": "*.woff2" },
+          { "path_glob": "*.ttf" },
+          { "path_glob": "*.eot" }
+        ]
+      },
+      "action": {
+        "type": "route",
+        "status": 200
+      }
+    },
+    {
+      "condition": { "path_glob": "/api/*" },
+      "action": { "type": "route", "status": 200 }
+    },
+    {
+      "action": {
+        "type": "rewrite",
+        "paths": {
+          "200": "/index.html"
+        }
+      }
+    }
+  ]
+}

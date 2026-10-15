@@ -157,7 +157,7 @@ async function main() {
     console.log(`prerendered ${tool.path}`)
   }
 
-  console.log(`\nDone — ${tools.length} tool routes prerendered with crawlable title/meta/schema/content.`)
+  // Blog posts prerender
 }
 
 main().catch(err => {
